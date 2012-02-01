@@ -1,0 +1,80 @@
+From d05ac748710f18cd0896a85dd085bd1b52891e2b Mon Sep 17 00:00:00 2001
+From: Colin Guthrie <cguthrie@mandriva.org>
+Date: Sun, 8 Feb 2009 13:09:27 +0000
+Subject: [PATCH 1/2] Use appropriate animation for screenlets
+
+---
+ metadata/animation.xml.in |    8 ++++++++
+ 1 files changed, 8 insertions(+), 0 deletions(-)
+
+diff --git a/metadata/animation.xml.in b/metadata/animation.xml.in
+index cd40135..bcc2752 100644
+--- a/metadata/animation.xml.in
++++ b/metadata/animation.xml.in
+@@ -37,6 +37,7 @@
+ 	    <extensible/>
+ 	    <sort start="2"/>
+ 	    <default>
++	      <value>animation:Glide 1</value>
+ 	      <value>animation:Zoom</value>
+ 	      <value>animation:Fade</value>
+ 	      <value>animation:Fade</value>
+@@ -49,6 +50,7 @@
+ 	    <min>50</min>
+ 	    <max>4000</max>
+ 	    <default>
++	      <value>300</value>
+ 	      <value>200</value>
+ 	      <value>150</value>
+ 	      <value>150</value>
+@@ -59,6 +61,7 @@
+ 	    <_long>The windows that will be animated.</_long>
+ 	    <type>match</type>
+ 	    <default>
++	      <value>class=Screenlet.py</value>
+ 	      <value>(type=Normal | Dialog | ModalDialog | Unknown) &amp; !(name=gnome-screensaver)</value>
+ 	      <value>(type=Menu | PopupMenu | DropdownMenu)</value>
+ 	      <value>(type=Tooltip | Notification | Utility) &amp; !(name=compiz) &amp; !(title=notify-osd)</value>
+@@ -72,6 +75,7 @@
+ 	      <value></value>
+ 	      <value></value>
+ 	      <value></value>
++	      <value></value>
+ 	    </default>
+ 	  </option>
+ 	</subgroup>
+@@ -103,6 +107,7 @@
+ 	    <extensible/>
+ 	    <sort start="2"/>
+ 	    <default>
++	      <value>animation:Glide 1</value>
+ 	      <value>animation:Zoom</value>
+ 	      <value>animation:Fade</value>
+ 	      <value>animation:Fade</value>
+@@ -115,6 +120,7 @@
+ 	    <min>50</min>
+ 	    <max>4000</max>
+ 	    <default>
++	      <value>300</value>
+ 	      <value>200</value>
+ 	      <value>150</value>
+ 	      <value>150</value>
+@@ -125,6 +131,7 @@
+ 	    <_long>The windows that will be animated.</_long>
+ 	    <type>match</type>
+ 	    <default>
++	      <value>class=Screenlet.py</value>
+ 	      <value>(type=Normal | Dialog | ModalDialog | Unknown) &amp; !(name=gnome-screensaver)</value>
+ 	      <value>(type=Menu | PopupMenu | DropdownMenu)</value>
+ 	      <value>(type=Tooltip | Notification | Utility) &amp; !(name=compiz) &amp; !(title=notify-osd)</value>
+@@ -138,6 +145,7 @@
+ 	      <value></value>
+ 	      <value></value>
+ 	      <value></value>
++	      <value></value>
+ 	    </default>
+ 	  </option>
+ 	</subgroup>
+-- 
+1.7.1
+

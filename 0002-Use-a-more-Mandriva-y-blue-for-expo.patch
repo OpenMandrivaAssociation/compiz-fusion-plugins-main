@@ -1,0 +1,29 @@
+From e9b972083d8cf5cd22375408e6263682a1bacf97 Mon Sep 17 00:00:00 2001
+From: Colin Guthrie <cguthrie@mandriva.org>
+Date: Sun, 8 Feb 2009 13:09:56 +0000
+Subject: [PATCH 2/2] Use a more 'Mandriva-y' blue for expo
+
+---
+ metadata/expo.xml.in |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/metadata/expo.xml.in b/metadata/expo.xml.in
+index 5ebbd89..8c72783 100644
+--- a/metadata/expo.xml.in
++++ b/metadata/expo.xml.in
+@@ -213,9 +213,9 @@
+ 						<_short>Ground color(near)</_short>
+ 						<_long>Color of the ground (near).</_long>
+ 						<default>
+-							<red>0xb333</red>
+-							<green>0xb333</green>
+-							<blue>0xb333</blue>
++							<red>0x1fff</red>
++							<green>0x4111</green>
++							<blue>0xe000</blue>
+ 							<alpha>0xcccc</alpha>
+ 						</default>
+ 					</option>
+-- 
+1.6.1.2
+
