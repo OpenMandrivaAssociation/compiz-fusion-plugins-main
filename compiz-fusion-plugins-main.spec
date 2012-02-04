@@ -215,7 +215,7 @@ rm -rf %{buildroot}
 
 * Mon Aug 13 2007 Colin Guthrie <cguthrie@mandriva.org> 0.5.2-1mdv2008.0
 + Revision: 62614
-- Official Release: 0.5.2
+- Official Release: 0.5.3
 
 * Sun Aug 12 2007 Colin Guthrie <cguthrie@mandriva.org> 0.0.1-0.20070811.1mdv2008.0
 + Revision: 62121
