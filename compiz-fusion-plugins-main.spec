@@ -5,7 +5,7 @@
 
 Name:		compiz-fusion-plugins-main
 Version:	0.8.8
-Release:	1
+Release:	2
 Summary:	Compiz Fusion Main Plugin Set for compiz
 License:	GPLv2
 Group:		System/X11
@@ -13,6 +13,8 @@ URL:		http://www.compiz.org/
 Source0:	http://releases.compiz.org/components/plugins-main/%{oname}-%{version}.tar.bz2
 Patch1:		0001-Use-appropriate-animation-for-screenlets.patch
 Patch2:		0002-Use-a-more-Mandriva-y-blue-for-expo.patch
+# From Debian and Fedora
+Patch3:		compiz-plugins-main_fix_edges.patch
 BuildRequires:	intltool
 BuildRequires:	compiz0.8-bcop
 BuildRequires:	compiz0.8-devel
@@ -58,8 +60,10 @@ Development files for Compiz Fusion Main Plugin Set for compiz
 %setup -q -n %{oname}-%{version}
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
+autoreconf -fi
 %configure2_5x --disable-static
 %make
 
