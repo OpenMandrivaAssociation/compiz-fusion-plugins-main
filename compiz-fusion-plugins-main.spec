@@ -11,7 +11,7 @@ Release:	3
 Summary:	Compiz Fusion Main Plugin Set for compiz
 License:	GPLv2
 Group:		System/X11
-URL:		http://www.compiz.org/
+URL:		https://www.compiz.org/
 Source0:	http://releases.compiz.org/components/plugins-main/%{oname}-%{version}.tar.bz2
 Patch1:		0001-Use-appropriate-animation-for-screenlets.patch
 Patch2:		0002-Use-a-more-Mandriva-y-blue-for-expo.patch
