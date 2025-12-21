@@ -17,6 +17,11 @@ Patch1:		0001-Use-appropriate-animation-for-screenlets.patch
 Patch2:		0002-Use-a-more-Mandriva-y-blue-for-expo.patch
 # From Debian and Fedora
 Patch3:		compiz-plugins-main_fix_edges.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	compiz0.8-bcop
 BuildRequires:	compiz0.8-devel
